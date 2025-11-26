@@ -44,6 +44,10 @@ public class Course {
         return title;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+    
     public void setStatus(Status status) {
         this.status = status;
     }
@@ -56,11 +60,9 @@ public class Course {
         return description;
     }
 
-    public Status getStatus() {
-        return status;
-    }
-
     public LocalDateTime getPublishedAt() {
         return publishedAt;
     }
+
+	public void setPublishedAt(LocalDateTime now) {}
 }
