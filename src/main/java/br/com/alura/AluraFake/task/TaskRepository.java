@@ -10,4 +10,6 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
     List<Task> findByCourseOrderByOrderNumberAsc(Course course);
 
     boolean existsByCourseAndStatement(Course course, String statement);
+    
+    long countByCourse(Course course);
 }
